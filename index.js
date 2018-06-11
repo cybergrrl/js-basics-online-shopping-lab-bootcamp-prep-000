@@ -49,8 +49,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
-    placingOrder = []
-    placingOrder.push("Your total cost is $", total(), ", which will be charged to the card ", cardNumber, ".")
+    placingOrder = "Your total cost is $" + total() + ", which will be charged to the card " + cardNumber + "."
     cart = []
     return placingOrder
   } else {
